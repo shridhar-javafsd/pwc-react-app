@@ -1,32 +1,10 @@
 import Routes from "./Routes";
 
-class Delete {
-
-}
-
-
 const App = () => {
-
-//   const obj = new Delete();
-
-//   const obj2 = {
-//     num: 10,
-//     fName: `abc`,
-//     isAlive: false,
-//     address: { street: 'ECIL', PIN: 123456 },
-//     phones: [7894, 7895]
-//   };
-
-//   const store = {
-//     Child: {},
-//     Logn: {},
-//     Parent: {}
-//   };
-
-// console.log(store.Child.data);
 
   return (
     <div >
+      <p>Sample text</p>
       <Routes />
     </div>
   );
