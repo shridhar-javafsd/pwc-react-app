@@ -7,24 +7,24 @@ import store from './redux/store';
 // guide - https://www.npmjs.com/package/@testing-library/jest-dom 
 // install -  npm i -D --exact jest-watch-typeahead@0.6.5
 
-
 test('renders Sample test', () => {
   render(
     <Provider store={store}>
       <App />
     </Provider>
   );
-  expect('Sample text').toBeInTheDocument();
+  const txt = screen.getByText('Sample text');
+  expect(txt).toBeInTheDocument();
 });
 
-test('renders Sample test', () => {
-  render(
-    <Provider store={store}>
-      <App />
-    </Provider>
-  );
-  expect('Some other sample text').not.toBeInTheDocument();
-});
+// test('renders Sample test', () => {
+//   render(
+//     <Provider store={store}>
+//       <App />
+//     </Provider>
+//   );
+//   expect('Some other sample text').not.toBeInTheDocument();
+// });
 
 // test('renders Sample test', () => {
 //   render(<App />);
