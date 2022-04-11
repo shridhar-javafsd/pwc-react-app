@@ -15,7 +15,7 @@ guide - https://redux-toolkit.js.org/tutorials/quick-start
 // const store = configureStore( {object containing reducers} );
 
 console.log('store');
-const store = configureStore(
+const store = configureStore( 
     {
         reducer: {
             child: childReducer,

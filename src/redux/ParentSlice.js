@@ -8,7 +8,7 @@ const ParentSlice = createSlice(
                 parentName: 'Monu',
                 parentAge: 30
             }
-        },
+        }, 
         reducers: {
             getParentData: (state, action) => {
                 console.log(state);
