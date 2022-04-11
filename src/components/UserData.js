@@ -77,7 +77,7 @@ const UserData = () => {
             <p className="display-4 text-primary">User Data Component</p>
             <div>
                 <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
-                    <p>Add a New App User </p>
+                    <p>Add a New App User</p>
                     <form className="form form-group form-primary" onSubmit={submitAddAppUser}>
                         <input className="form-control mt-3" type="number" id="id" name="id" value={appUserToAdd.id} onChange={handleAddAppUser} placeholder="Enter id" />
                         <input className="form-control mt-3" type="text" id="name" name="name" value={appUserToAdd.name} onChange={handleAddAppUser} placeholder="Enter name" />
