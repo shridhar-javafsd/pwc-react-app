@@ -17,7 +17,7 @@ test('renders Sample test', () => {
   const txt = screen.getByText('Sample text');
   expect(txt).toBeInTheDocument();
 });
-test('renders Sample test', () => {
+test('renders Sample test ', () => {
   render(
     <Provider store={store}>
       <App />

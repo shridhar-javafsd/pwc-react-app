@@ -3,10 +3,21 @@ import { Provider } from 'react-redux';
 import UserData from './components/UserData';
 import store from './redux/store';
 
-// guide - https://jestjs.io/docs/getting-started 
-// guide - https://www.npmjs.com/package/@testing-library/jest-dom 
-// install -  npm i -D --exact jest-watch-typeahead@0.6.5
+beforeAll(() => {
+    console.log('beforeAll');
+});
 
+afterAll(() => {
+    console.log('afterAll');
+});
+
+beforeEach(() => {
+    console.log('beforeEach');
+});
+
+afterEach(() => {
+    console.log('afterEach');
+});
 
 test('renders Add a New App User', () => {
     render(
@@ -15,6 +26,16 @@ test('renders Add a New App User', () => {
         </Provider>
     );
     const txt = screen.getByText('Add a New App User');
+    expect(txt).toBeInTheDocument();
+});
+
+test('renders User Data Component', () => {
+    render(
+        <Provider store={store}>
+            <UserData />
+        </Provider>
+    );
+    const txt = screen.getByText('User Data Component');
     expect(txt).toBeInTheDocument();
 });
 
