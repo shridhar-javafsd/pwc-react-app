@@ -1,19 +1,14 @@
 import { Link } from "react-router-dom";
-import Map from 'immutable';
+import {Map} from 'immutable';
 
 // remaining topics here - 
 // ImmutableJS https://www.npmjs.com/package/immutable#getting-started 
 
-
- 
-
-
 const Page404 = () => {
 
+    // similar to collection in Java 
     const map1 = Map({ a: 1, b: 2, c: 3 });
     const map2 = map1.set('b', 50);
-    // map1.get('b') + ' vs. ' + map2.get('b');
-
 
     return (
         <div className="container">
@@ -23,8 +18,8 @@ const Page404 = () => {
 
             <div>
                 <p>ImmutableJS</p>
-                <p>{map1}</p>
-                <p>{map2}</p>
+                <p>{map1.get('b')}</p>
+                <p>{map2.get('b')}</p>
             </div>
 
 

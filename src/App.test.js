@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import App from './App';
-import UserData from './components/UserData';
 import store from './redux/store';
 
 // guide - https://jestjs.io/docs/getting-started 
